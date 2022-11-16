@@ -217,9 +217,24 @@ button:hover {
 }
 
 .product-sign-up-card {
+    padding: 15px;
     width: 240px;
-    height: 178px;
+    border-radius: 10px;
     background: transparent;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.product-sign-up-card:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#hover-sign-up:hover{
+    text-decoration-line: underline;
 }
 
 .product-sign-up-card h1 {
@@ -431,6 +446,7 @@ button:hover {
 
 .content-card h1:hover {
     color: #02897A;
+    text-decoration-line: underline;
 }
 
 .content-card-img {
@@ -441,11 +457,19 @@ button:hover {
     overflow: hidden;
 }
 
+.content-card-img:hover #hover-content-img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
 .content-card-img img {
     height: inherit;
     width: inherit;
     object-fit: cover;
-
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 .text-card h1 {
@@ -482,28 +506,37 @@ button:hover {
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    color: #22343D;
 }
 
-.price-card:hover {
+.price-card:hover #hover-price{
+    color: white;
+}
+
+.price-card:hover .price-btn{
+    background-color: white;
+    color: #02897A;
+}
+
+.price-card:hover  {
     -webkit-transform: scale(1.3);
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #02897A;
+    color: white;
 }
-
 
 .price-card h1 {
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
     /* identical to box height, or 167% */
-    color: #22343D;
 }
 
 .price-card p {
     font-size: 16px;
     line-height: 40px;
     /* identical to box height, or 250% */
-    color: #22343D;
 }
 
 .row-price h1 {
@@ -591,6 +624,14 @@ button:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#hover-client-text:hover{
+    text-decoration-line: underline;
+}
+
+.hover-icon:hover{
+    cursor: pointer;
 }
 
 .client-card p {
@@ -683,6 +724,16 @@ button:hover {
     background: #02897A;
     border-radius: 32px;
     margin-bottom: 150px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.compani:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .left-item-compani h2 {
